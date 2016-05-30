@@ -1,0 +1,6 @@
+---
+# defaults file for ansible-role-ubuntu-redis
+ubuntu_redis_ubuntu_codename: 'xenial'
+ubuntu_redis_version: '3'
+ubuntu_redis_full_version: "{{ ubuntu_redis_version }}.0.7-1chl1~{{ ubuntu_redis_ubuntu_codename }}1"
+ubuntu_redis_repository: ppa:chris-lea/redis-server

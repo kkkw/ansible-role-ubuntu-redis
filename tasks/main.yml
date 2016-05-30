@@ -1,0 +1,11 @@
+---
+# tasks file for ansible-role-ubuntu-redis
+- block:
+
+  - name: add repository for redis
+    apt_repository: repo={{ ubuntu_redis_repository }}
+
+  - name: install redis with apt-get
+    apt: name=redis-server={{ ubuntu_redis_version }}:{{ ubuntu_redis_full_version }} update_cache=yes
+
+  become: True
