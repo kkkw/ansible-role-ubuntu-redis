@@ -18,8 +18,3 @@ Dependencies
 ------------
 
 None
-
-License
--------
-
-BSD
